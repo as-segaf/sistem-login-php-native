@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-	include'../config.php';
+	include'config.php';
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$cek      = mysqli_query($link, "SELECT * FROM user WHERE username='$username'");
